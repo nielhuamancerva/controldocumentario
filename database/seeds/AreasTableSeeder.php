@@ -1,0 +1,622 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class AreasTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('areas')->insert( [[
+            'area' => 'Alcaldia',
+            'siglas' => 'A',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '1',
+            'codigo_unico_creacion' => 'AD1',
+            'jefe_inmediato' => 'ninguno',
+            'matriz_gerencia' => 'ninguno',
+            'codigo_jefe_inmediato' => 'ninguno',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+            
+        ],
+        [
+            'area' => 'Gerencia Municipal',
+            'siglas' => 'MDP/GM',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '1',
+            'codigo_unico_creacion' => 'AD2',
+            'jefe_inmediato' => 'ninguno',
+            'codigo_jefe_inmediato' => 'ninguno',
+            'matriz_gerencia' => 'ninguno',
+             'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+            
+        ],
+        [
+            'area' => 'Gerencia de Administracion y Finanzas',
+            'siglas' => 'GAF/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G1',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'siglas' => 'GPSDH/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G8',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Secreatria General',
+            'siglas' => 'S.GRAL/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G10',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Secreatria General',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Asesoria Juridica',
+            'siglas' => 'GAJ',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G2',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Asesoria Juridica',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Planeamiento Presupuesto y Programacion de la Inversiones',
+            'siglas' => 'GPPPI/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G3',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Planeamiento Presupuesto y Programacion de la Inversiones',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Administracion Tributaria',
+            'siglas' => 'GAT/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G4',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Administracion Tributaria',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'siglas' => 'GIDUR/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G5',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'siglas' => 'GSPA/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G6',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Desarrollo Economico',
+            'siglas' => 'GDE/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G7',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Desarrollo Economico',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Seguridad Ciudadana',
+            'siglas' => 'GSC/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G9',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Seguridad Ciudadana',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Tecnologias de la Informacion',
+            'siglas' => 'SGTI/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG6',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Contabilidad',
+            'siglas' => 'SGC/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG1',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Fiscalizacion Tributario',
+            'siglas' => 'SGFT/GAT/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG8',
+            'jefe_inmediato' => 'Gerencia de Administracion Tributaria',
+            'codigo_jefe_inmediato' => 'G4',
+            'matriz_gerencia' => 'Gerencia de Administracion Tributaria',
+            'created_at' => '2020-08-21 21=>46=>50',
+            'updated_at' => '2020-08-21 21=>46=>50'
+        ],
+        [
+            'area' => 'Sub Gerencia de Logistica y Abastecimiento',
+            'siglas' => 'SGLySSAA/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG2',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Tesoreria y Caja',
+            'siglas' => 'SGT/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG3',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => '2020-08-21 21=>45=>15',
+            'updated_at' => '2020-08-21 21=>45=>15'
+        ],
+        [
+            'area' => 'Sub Gerencia de Recursos Humanos',
+            'siglas' => 'SGRRHH/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG4',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            
+            'area' => 'Sub Gerencia de Control Patrimonial y Maquinarias',
+            'siglas' => 'SGCPM/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG5',
+            'jefe_inmediato' => 'Gerencia de Administracion y Finanzas',
+            'codigo_jefe_inmediato' => 'G1',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            
+            'area' => 'Sub Gerencia de Recaudacion Tributario',
+            'siglas' => 'SGARCT/GAT/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG7',
+            'jefe_inmediato' => 'Gerencia de Administracion Tributaria',
+            'codigo_jefe_inmediato' => 'G4',
+            'matriz_gerencia' => 'Gerencia de Administracion Tributaria',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            
+            'area' => 'Caja',
+            'siglas' => 'C',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '4',
+            'codigo_unico_creacion' => 'O2',
+            'jefe_inmediato' => 'Sub Gerencia de Tesoreria y Caja',
+            'codigo_jefe_inmediato' => 'SG3',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            
+            'area' => 'Almacen',
+            'siglas' => 'Al',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '4',
+            'codigo_unico_creacion' => 'O1',
+            'jefe_inmediato' => 'Sub Gerencia de Logistica y Abastecimiento',
+            'codigo_jefe_inmediato' => 'SG2',
+            'matriz_gerencia' => 'Gerencia de Administracion y Finanzas',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Tramite',
+            'siglas' => 'TD/MDP',
+            'estado_area' => '1',
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'O3',
+            'jefe_inmediato' => 'Secretaria Gerenal',
+            'codigo_jefe_inmediato' => 'SG2',
+            'matriz_gerencia' => 'Secretaria Gerenal',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'siglas' => 'GEPI/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G2',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Procurador Municipal',
+            'siglas' => 'PPM/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G12',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gerencia de Asesoria Juridica',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Educacion, Cultura, Deporte Y Recreación',
+            'siglas' => 'SGECDR/GPSDG-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG9',
+            'jefe_inmediato' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'codigo_jefe_inmediato' => 'G8',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Participación Ciudadana',
+            'siglas' => 'SGPC/GPSDH-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG10',
+            'jefe_inmediato' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'codigo_jefe_inmediato' => 'G8',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Programas Sociales y Defensoriales',
+            'siglas' => 'SGPS/GPSDH-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG11',
+            'jefe_inmediato' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'codigo_jefe_inmediato' => 'G8',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Inclusión Social Y Comunidades Nativas',
+            'siglas' => 'SGISCN/GPSDH-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG12',
+            'jefe_inmediato' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'codigo_jefe_inmediato' => 'G8',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Defensoria Municipal y del Niño y Adolecente',
+            'siglas' => 'SGDEMUNA/GPSDH-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG13',
+            'jefe_inmediato' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'codigo_jefe_inmediato' => 'G8',
+            'matriz_gerencia' => 'Gerencia de Promocion Social y Desarrollo Humano',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Obras Publicas',
+            'siglas' => 'SGOP/GIDUR/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG14',
+            'jefe_inmediato' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'codigo_jefe_inmediato' => 'G5',
+            'matriz_gerencia' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Pleneamiento Control Urbano y Catastro',
+            'siglas' => 'SGPCUyC/GIDUR/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG15',
+            'jefe_inmediato' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'codigo_jefe_inmediato' => 'G5',
+            'matriz_gerencia' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Saneamiento Fisico Legal',
+            'siglas' => 'SGSFL/GIDUR/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG16',
+            'jefe_inmediato' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'codigo_jefe_inmediato' => 'G5',
+            'matriz_gerencia' => 'Gerencia de Infraestructura y Desarrollo Urbano y Rural',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Unidad Formuladora',
+            'siglas' => 'SGUF/GEPI/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG17',
+            'jefe_inmediato' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'codigo_jefe_inmediato' => 'G5',
+            'matriz_gerencia' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Estudios Definitivos',
+            'siglas' => 'SGED/GEPI/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG18',
+            'jefe_inmediato' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'codigo_jefe_inmediato' => 'G5',
+            'matriz_gerencia' => 'Gerencia de Estudios y Proyectos de Inversion',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Oficina de Defensa Civil',
+            'siglas' => 'ODCyCR/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G13',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Oficina de Defensa Civil',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Oficina de Registro Civil',
+            'siglas' => 'OREC/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G14',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Oficina de Registro Civil',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Gestion Municipal de Servicios de Saneamiento',
+            'siglas' => 'OREC/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G15',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Gestion Municipal de Servicios de Saneamiento',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Policia Municipal',
+            'siglas' => 'UPM-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G16',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Policia Municipal',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Transportes y Seguridad Vial',
+            'siglas' => 'SGTSV/GSPA/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG19',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'G6',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Limpieza Publica y Areas Verdes',
+            'siglas' => 'SGLPAV/GSPA/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG20',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'G6',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Gestion Ambiental',
+            'siglas' => 'SGGA/GSPA/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG21',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'G6',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Unidad Supervision y Control Sanitario',
+            'siglas' => 'USCS/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '4',
+            'codigo_unico_creacion' => 'O4',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'SG21',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Unidad Local de Evaluacion y Fiscalizacion Ambiental',
+            'siglas' => 'ULEFA/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '4',
+            'codigo_unico_creacion' => 'O5',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'SG21',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Seguridad Ciudadana',
+            'siglas' => 'SGSC/GSC/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'O5',
+            'jefe_inmediato' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'codigo_jefe_inmediato' => 'G9',
+            'matriz_gerencia' => 'Gerencia de Servicios Publicos y Del Ambiente',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Desarrollo Turistico Productivo',
+            'siglas' => 'SGDTP-GDE/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG23',
+            'jefe_inmediato' => 'Gerencia de Desarrollo Economico',
+            'codigo_jefe_inmediato' => 'G7',
+            'matriz_gerencia' => 'Gerencia de Desarrollo Economico',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Comercialización y Licencias',
+            'siglas' => 'SGCL-GDE/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG24',
+            'jefe_inmediato' => 'Gerencia de Desarrollo Economico',
+            'codigo_jefe_inmediato' => 'G7',
+            'matriz_gerencia' => 'Gerencia de Desarrollo Economico',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Sub Gerencia de Desarrollo Agropecuario y Forestal',
+            'siglas' => 'SGDAAF-GDE/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG25',
+            'jefe_inmediato' => 'Gerencia de Desarrollo Economico',
+            'codigo_jefe_inmediato' => 'G7',
+            'matriz_gerencia' => 'Gerencia de Desarrollo Economico',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Imagen Institucional',
+            'siglas' => 'II/MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '3',
+            'codigo_unico_creacion' => 'SG26',
+            'jefe_inmediato' => 'Secreatria General',
+            'codigo_jefe_inmediato' => 'G10',
+            'matriz_gerencia' => 'Secreatria General',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ],
+        [
+            'area' => 'Oficina Tecnica Municipal de Saneamiento',
+            'siglas' => 'OTMS-GM-MDP',
+            'estado_area' => 1,
+            'nivel_jerarquico' => '2',
+            'codigo_unico_creacion' => 'G17',
+            'jefe_inmediato' => 'Gerencia Municipal',
+            'codigo_jefe_inmediato' => 'AD2',
+            'matriz_gerencia' => 'Oficina Tecnica Municipal de Saneamiento',
+            'created_at' => "2020-08-21 21=>43=>08",
+            'updated_at' => "2020-08-21 21=>43=>08"
+        ]
+    ]);
+    }
+}
